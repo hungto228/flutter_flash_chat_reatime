@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_flash_chat_reatime/screen/login_screen.dart';
+import 'package:flutter_flash_chat_reatime/screen/resgitransion_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -64,7 +65,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => LoginScreen()));
+                              builder: (context) => ResgitransionScreen()));
                     });
                   },
                   child: Text(
