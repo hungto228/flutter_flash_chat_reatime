@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_flash_chat_reatime/screen/login_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -39,7 +40,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(25.0),
                 child: MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()));
+                  },
                   child: Text(
                     "login",
                     textAlign: TextAlign.center,
@@ -55,7 +59,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(25.0),
                 child: MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LoginScreen()));
+                    });
+                  },
                   child: Text(
                     "resgitter",
                     textAlign: TextAlign.center,
