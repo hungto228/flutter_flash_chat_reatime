@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ResgitransionScreen extends StatefulWidget {
+  static String id = "resgitransion_screen";
   @override
   _ResgitransionScreenState createState() => _ResgitransionScreenState();
 }

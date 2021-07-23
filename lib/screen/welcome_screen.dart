@@ -4,6 +4,7 @@ import 'package:flutter_flash_chat_reatime/screen/login_screen.dart';
 import 'package:flutter_flash_chat_reatime/screen/resgitransion_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
+  String id = "welcome_screen";
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
@@ -42,8 +43,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 borderRadius: BorderRadius.circular(25.0),
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => LoginScreen()));
+                    Navigator.pushNamed(context, LoginScreen.id);
                   },
                   child: Text(
                     "login",
@@ -62,10 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     setState(() {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ResgitransionScreen()));
+                      Navigator.pushNamed(context, ResgitransionScreen.id);
                     });
                   },
                   child: Text(
