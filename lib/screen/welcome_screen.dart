@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_flash_chat_reatime/screen/login_screen.dart';
@@ -64,10 +65,10 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     height: 60.0,
                   ),
                 ),
-                Text(
-                  "Flatchat_",
-                  //"${controller.value.toInt()}%",
-                  style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
+                TypewriterAnimatedTextKit(
+                  text: ["Flatchat"],
+                  textStyle:
+                      TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
                 )
               ],
             ),
