@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "96904047772",
+    "project_id": "flashchat-5648b",
+    "storage_bucket": "flashchat-5648b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96904047772:android:3bf593684c5cd412329159",
+        "android_client_info": {
+          "package_name": "com.hungto.flutter_flash_chat_reatime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96904047772-t9cgalvk7o4eqbe6nhsatcfhk455tsas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ6AFQ0eR5chAyq9oQwOGJs_l9pGycpTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96904047772-t9cgalvk7o4eqbe6nhsatcfhk455tsas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

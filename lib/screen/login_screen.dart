@@ -4,11 +4,15 @@ import 'package:flutter_flash_chat_reatime/constants.dart';
 
 class LoginScreen extends StatefulWidget {
   static String id = "login_screen";
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  late String email;
+  late String passWord;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,6 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 40,
             ),
             TextField(
+              keyboardType: TextInputType.emailAddress,
               style: TextStyle(color: Colors.grey),
               textAlignVertical: TextAlignVertical.center,
               onChanged: (values) {},
@@ -40,11 +45,14 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 5,
             ),
             TextField(
+              obscureText: true,
               style: TextStyle(
                 color: Colors.grey,
               ),
               textAlignVertical: TextAlignVertical.center,
-              onChanged: (values) {},
+              onChanged: (values) {
+                email = values;
+              },
               decoration: kTextFieldDecoration.copyWith(
                   hintText: "Enter your pass word"),
             ),
