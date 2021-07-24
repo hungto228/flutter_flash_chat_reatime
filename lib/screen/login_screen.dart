@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_flash_chat_reatime/constants.dart';
 
 class LoginScreen extends StatefulWidget {
   static String id = "login_screen";
@@ -32,27 +33,8 @@ class _LoginScreenState extends State<LoginScreen> {
               style: TextStyle(color: Colors.grey),
               textAlignVertical: TextAlignVertical.center,
               onChanged: (values) {},
-              decoration: InputDecoration(
-                  hintText: "Enter your mail",
-                  hintStyle: Theme.of(context)
-                      .textTheme
-                      .caption!
-                      .copyWith(color: Colors.grey),
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(25),
-                    borderSide: BorderSide(color: Colors.black, width: 1.0),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(25),
-                    borderSide:
-                        BorderSide(color: Colors.blueAccent, width: 1.0),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25.0),
-                      borderSide:
-                          BorderSide(color: Colors.blueAccent, width: 2))),
+              decoration:
+                  kTextFieldDecoration.copyWith(hintText: "Enter your email"),
             ),
             SizedBox(
               height: 5,
@@ -63,29 +45,8 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               textAlignVertical: TextAlignVertical.center,
               onChanged: (values) {},
-              decoration: InputDecoration(
-                  hintText: "Enter your password",
-                  hintStyle: Theme.of(context)
-                      .textTheme
-                      .caption!
-                      .copyWith(color: Colors.grey),
-                  alignLabelWithHint: true,
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(25),
-                    borderSide:
-                        BorderSide(color: Colors.blueAccent, width: 1.0),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(25.0),
-                    borderSide:
-                        BorderSide(color: Colors.blueAccent, width: 1.0),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25.0),
-                      borderSide:
-                          BorderSide(color: Colors.blueAccent, width: 2.0))),
+              decoration: kTextFieldDecoration.copyWith(
+                  hintText: "Enter your pass word"),
             ),
             SizedBox(
               height: 40,

@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_flash_chat_reatime/compoments/rounded_button.dart';
 import 'package:flutter_flash_chat_reatime/screen/login_screen.dart';
 import 'package:flutter_flash_chat_reatime/screen/resgitransion_screen.dart';
 
@@ -75,43 +76,19 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             SizedBox(
               height: 48.0,
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
-              child: Material(
-                elevation: 5.0,
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(25.0),
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, LoginScreen.id);
-                  },
-                  child: Text(
-                    "login",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
+            RoundedButton(
+              title: "login",
+              colour: Colors.lightBlueAccent,
+              onPressed: () {
+                Navigator.pushNamed(context, LoginScreen.id);
+              },
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
-              child: Material(
-                elevation: 5,
-                color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(25.0),
-                child: MaterialButton(
-                  onPressed: () {
-                    setState(() {
-                      Navigator.pushNamed(context, ResgitransionScreen.id);
-                    });
-                  },
-                  child: Text(
-                    "resgitter",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
+            RoundedButton(
+              title: "Resgiter",
+              colour: Colors.lightBlueAccent,
+              onPressed: () {
+                Navigator.pushNamed(context, ResgitransionScreen.id);
+              },
             ),
           ],
         ),
