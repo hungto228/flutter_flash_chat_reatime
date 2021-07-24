@@ -18,9 +18,12 @@ class _ResgitransionScreenState extends State<ResgitransionScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              height: 200.0,
-              child: Image.asset("images/logo.png"),
+            Hero(
+              tag: "logo",
+              child: Container(
+                height: 200.0,
+                child: Image.asset("images/logo.png"),
+              ),
             ),
             SizedBox(
               height: 40.0,
@@ -90,7 +93,7 @@ class _ResgitransionScreenState extends State<ResgitransionScreen> {
             Padding(
               padding: EdgeInsets.symmetric(vertical: 16),
               child: Material(
-                color: Colors.blueAccent,
+                color: Colors.lightBlueAccent,
                 borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 elevation: 5.0,
                 child: MaterialButton(
